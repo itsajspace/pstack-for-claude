@@ -273,6 +273,10 @@ pstack also ships a dormant [benny automation pack](./automations/benny/). benny
 
 to set it up, point claude code at [`FOR_AGENTS.md`](./automations/benny/FOR_AGENTS.md). setup copies the pack into the target repository at `.claude/automations/benny/`, enables pstack there for shared skills, and keeps user configuration outside the copied pack.
 
+## what this plugin runs and sends
+
+pstack is text: skills, playbooks, and two subagent prompts. it has no hooks, no MCP servers, and no background processes. two skills carry helper scripts that the agent may run when you invoke them: `poteto-mode` ships a bun/TypeScript toolkit under `skills/poteto-mode/scripts/` (a PR watcher that calls the `gh` CLI, an orchestration ledger, a plan checker, and a read-only worktree audit) and `show-me-your-work` ships a shell script that appends rows to a local TSV log. nothing in the plugin sends data anywhere on its own. network access happens only through tools you already have, such as `gh` and your own MCP servers.
+
 ## license
 
 MIT. the original pstack is copyright Lauren Tan; see [LICENSE](./LICENSE). this port keeps that license.

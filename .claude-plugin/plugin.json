@@ -2,11 +2,12 @@
 	"name": "pstack",
 	"displayName": "pstack",
 	"version": "0.15.15",
-	"description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+	"description": "Port of Lauren Tan's pstack (MIT) to Claude Code. if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
 	"author": {
-		"name": "Lauren Tan"
+		"name": "itsajspace",
+		"url": "https://github.com/itsajspace"
 	},
-	"homepage": "https://github.com/itsajspace/pstack-for-claude",
+	"homepage": "https://github.com/itsajspace/pstack-for-claude#readme",
 	"repository": "https://github.com/itsajspace/pstack-for-claude",
 	"license": "MIT",
 	"keywords": [
@@ -18,5 +19,8 @@
 		"subagents",
 		"unslop"
 	],
+	"icon": "./assets/logo.png",
+	"documentationUrl": "https://github.com/itsajspace/pstack-for-claude/blob/main/docs/guide/README.md",
+	"supportUrl": "https://github.com/itsajspace/pstack-for-claude/issues",
 	"skills": "./skills/"
 }
