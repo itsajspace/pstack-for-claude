@@ -1,0 +1,14 @@
+{
+	"name": "pstack-for-claude",
+	"owner": {
+		"name": "Lauren Tan"
+	},
+	"description": "pstack, poteto's rigorous agent workflows, ported to Claude Code.",
+	"plugins": [
+		{
+			"name": "pstack",
+			"source": ".",
+			"description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence."
+		}
+	]
+}
